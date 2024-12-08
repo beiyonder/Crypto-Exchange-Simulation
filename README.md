@@ -1,56 +1,54 @@
-# Crypto Trading Platform
+# Cryptocurrency Trading Simulation Platform
 
-Crypto Trading Platform, a powerful and fully functional object-oriented C++ application that enables you to trade various cryptocurrencies such as Bitcoin (BTC) and Ethereum (ETH) efficiently. The project implements several advanced C++ concepts, including static functions, function overloading, and more, to provide a robust and seamless trading experience.
+## Overview
 
-One of the key highlights of this platform is the implementation of an order book and a sophisticated matching algorithm. The order book efficiently organizes all the buy (bids) and sell (asks) orders at different price levels. The matching algorithm ensures that buy orders are matched with appropriate sell orders, facilitating seamless transactions and timely order resolution.
+A C++ application designed to simulate cryptocurrency trading mechanisms with a robust order matching system. The platform provides a comprehensive environment for modeling trading activities, order book management, and transaction processing.
 
-## Features
+## System Capabilities
 
-* Print market stats.
-* Make an ask or a bid.
-* Check your wallet balance.
+### Core Functionalities
+- Market data visualization
+- Order placement (buy and sell orders)
+- Wallet balance management
+- Detailed order book tracking
+- Historical order data import via CSV
 
-## Key Functionalities
+### Technical Architecture
+- Implemented in modern C++
+- Object-oriented programming approach
+- Advanced order matching algorithm
+- Support for multiple cryptocurrency types
 
-The platform offers the following essential functionalities:
+## Installation and Execution
 
-- **Print Market Stats**: Users can access and view market statistics. Although static data is currently used for demonstration purposes, the platform can be extended to fetch real-time market data from various sources.
+### Prerequisites
+- C++ compiler (g++)
+- Basic command-line interface knowledge
 
-- **Make an Ask/Bid**: Users can place sell (ask) and buy (bid) orders for various cryptocurrencies. The platform dynamically adds these orders to the order book, organizing them based on the appropriate timestamp.
+### Setup Steps
+1. Clone the repository
+2. Compile the source code
+3. Run the executable
 
-- **Wallet Balance**: Users can check the balance in their virtual wallet, which keeps track of their holdings and available funds.
+```bash
+# Repository cloning
+git clone https://github.com/beiyonder/Crypto-Exchange-Simulation.git
 
-- **Time Frame Resolution**: The platform supports different time frames for trading activities. At the end of each time frame, all pending asks and bids from the previous timestamp are resolved and updated accordingly.
-
-- **CSV Order Import**: The application reads order data from a CSV file and generates an order book from it. This feature enables users to simulate and analyze historical trading data efficiently.
-
-## Usage
-
-- Clone the repository.
-```
-git clone https://github.com/gautamV19/Crypto-Trading-Plateform.git
-```
--  Compile the code using the following command:
-```
+# Compilation
 g++ main.cpp -o trading_platform
-```
-- Run the trading platform using the following command:
-```
+
+# Execution
 ./trading_platform
 ```
-- Successful execution will show this:
+
+## Interaction Menu
+
 ```
-1: Print help
-2: Print exchange stats
-3: Make an offer
-4: Make a bid
-5: Print wallet
-6: Continue
-===========
-Current time is: 2020/03/17 17:01:24.884492
-Type in 1-6
+1: Help Menu
+2: Exchange Statistics
+3: Create Sell Order
+4: Create Buy Order
+5: Check Wallet
+6: Continue Trading
 ```
 
-## Credits
-
-This project was created by [@gautamV19](https://www.github.com/gautamV19).
